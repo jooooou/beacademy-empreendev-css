@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorthand & Margin</title>
+
+    <style>
+        * {
+            margin:0px;
+            padding:0;
+        }
+
+        h1 {
+            font: italic 100 24px 'Arial', sans-serif;
+            color:white;
+        }
+
+        .box {
+            background-color:red;
+            /* Margin Shorthand */
+            /* top-bottom right-left */
+            /* top right/left bottom */
+            /* top right left bottom */
+            margin:24px 8px;
+        }
+
+        .box2 {
+            background-color:green;
+            margin:12px 80px 4px;
+        }
+
+        .box3 {
+            background-color:blue;
+            margin:8px 4px 12px 42px;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="box">   
+    <h1>Título 1</h1>
+</div>
+
+<div class="box2">   
+    <h1>Título 2</h1>
+</div>
+
+<div class="box3">   
+    <h1>Título 3</h1>
+</div>
+
+</body>
+</html>

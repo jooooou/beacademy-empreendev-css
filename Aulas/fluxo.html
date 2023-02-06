@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxo</title>
+
+<!-- ###################################
+        Estilo de Especificidade 
+-->
+
+    <!-- <style>
+        /* Especificidade 1 */
+        h1 {
+            background:blue;
+            color:white;
+        }
+        /* Especificidade 100 */
+        #superTitle {
+            background:red;
+        }
+        /* Especificidade 1 */
+        h1 {
+            background:green;
+        }
+        /* Especificidade 10 */
+        .myTitle2{
+            background:yellow;
+        }
+        /* Especificidade 1 */
+        strong {
+            color:red;
+        }
+        /* Especificidade 2 */
+        p strong {
+            color:blueviolet;
+        }
+        /* Especificidade 11 */
+        .myText strong {
+            color:aqua;
+        }
+
+    </style> -->
+
+
+
+<!--  
+    ###################################
+        Estilo de Combinators
+-->
+
+
+<!-- *********Descendent********
+    
+    <style>
+    body ul li{
+        background:green;
+        color:red;
+    }
+    body section div ul li{
+        background:blue;
+        color:yellow;
+
+    }
+</style> -->
+
+
+<!--  *********Child********
+    
+
+<style>
+    body > ul {
+        background:red;
+    }
+
+    div > ul {
+        background:blue;
+    }
+</style>
+
+-->
+
+<!--  *********Adjacent Sibling********
+
+<style>
+    h1 + p {
+        color:green;
+    }
+</style>
+-->
+
+</head>
+<body>
+    
+<!-- ###################################
+        Especificidades 
+-->
+
+<!-- <h1 id="superTitle">Testando Especificidade</h1>
+<P class="myText">
+    Lorem ipsum dolor sit amet consectetur, <strong>adipisicing</strong> elit. Inventore sint itaque at nam odio aliquid et dolorem, tenetur quasi natus numquam.
+</P>
+
+<h1 class="myTitle2">Testando Especificidade</h1>
+<P class="myText2">
+    Lorem ipsum dolor sit amet consectetur, ,<strong> adipisicing</strong> elit. Inventore sint itaque at nam odio aliquid et dolorem, tenetur quasi natus numquam.
+</P> -->
+
+
+
+<!-- ###################################
+        Combinadores 
+-->
+
+<div> Pai
+    <P>Teste</P> <!--Filho -->
+</div>
+<ul> <!-- Pai -->
+    <li>Testando Combinadores</li> <!-- Filho -->
+</ul>
+<div>Outro Formato</div> <!-- Único -->
+<section> <!-- Pai -->
+    <div> <!-- Filho de Section, Pai de UL-->
+        <ul> <!--Filho de DIV, neto de Section, Pai de LI-->
+            <li>Outro marcador</li> <!--Filho de Ul, Neto de DIV, Bisneto de Section-->
+        </ul>
+    </div>
+</section>
+
+<h1>Título</h1>
+<p>Parágrafo</p>
+<button>Enviar</button>
+<p>Outro parágrafo</p>
+
+
+</body>
+</html>
+
+<!-- 
+    ###################################
+            At Rules
+        Regras de comportamento
+        
+        '@identificador valor'
+
+        * @import
+        * @media
+        * @font-face
+        * @keyframe
+
+ -->
+
+ <!-- 
+
+    ###################################
+
+  -->

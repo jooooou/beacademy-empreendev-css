@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color & Background</title>
+
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        .bg-box {
+            width:600px;
+            height:600px;
+            background-color:#FF12FF;
+            border:8px dotted #000000;
+            padding:16px;
+            background-size:50%;
+            background-repeat:no-repeat;
+            background-position:center center;
+            background-origin:content-box;
+            background:radial-gradient(rgba(0,90,01), rgba(0,90,0,0.5));
+            background-image:url("https://source.unsplash.com/random");
+/* shorthand */
+            background: radial-gradient(rgba(0,90,0,1), rgba(0,90,0,0.1)) , url("https://source.unsplash.com/random") , no-repeat center center / 50% content-box;
+        }
+    </style>
+
+</head>
+<body>
+    
+<div class="container">
+    <div class="bg-box"></div>
+    <h1>Testando backgrounds</h1>
+</div>
+
+</body>
+</html>

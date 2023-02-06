@@ -1,0 +1,67 @@
+/* ul li {
+    color:blue;
+    font-size:2.3rem;
+}
+ul p:first-child {
+    color:red;
+} */
+
+/* body p:nth-of-type(2) {
+    color:red;
+    font-size:24px;
+} */
+
+/* body p:nth-child(2){
+    color:blue;
+} */
+
+/* ul li:nth-child(even){
+    background:red;
+    color:white;
+}
+ul li:nth-child(odd){
+    background:blue;
+    color:white;
+} */
+
+.btnSubmit{
+    padding:12px;
+    color:white;
+    background:rgba(0,11,215);
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+    transition:.4s;
+    
+}
+
+.btnSubmit:hover{
+    background:rgba(1,74,142);
+    font-size:50px;
+}
+
+.btnSubmit:focus{
+        background:red;
+}
+
+input[type=text]{
+    border:1px solid #F2F2F2;
+    padding:12px;
+    border-radius:4px;
+    margin-bottom:8px;
+    outline:none;
+    transition:.4s;
+
+}
+
+input[type=text]:hover{
+    border:1px solid rgb(0,11,215);
+    font-size:20px;
+}
+
+input[type=text]:disabled{
+    background:rgba(0,11,215, 0.563);
+}
+input[type=text]:disabled::placeholder{
+    color:white;
+}
